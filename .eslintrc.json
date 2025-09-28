@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "eslint:recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prefer-const": "error",
+    "no-var": "error",
+    "no-console": "off",
+    "eqeqeq": "error",
+    "curly": "off",
+    "no-undef": "off",
+    "no-prototype-builtins": "off"
+  },
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true
+  }
+}
